@@ -30,8 +30,8 @@ nas obrazu systemu, który już to wszystko ma skonfigurowane i działające:
   [Extension Pack](https://www.virtualbox.org/wiki/Downloads).<br>
   (Zorientowałem się, że mam nienajnowszego VB kiedy obraz już zdążył pójść w świat - Antek)
 - Ściągnij przygotowany przez nas obraz stąd:
-    - [Part 1/2](http://we.tl/7y0PuG7zzs)
-    - [Part 2/2](http://we.tl/KbsQURCZtl)
+    - [Part 1/2](http://we.tl/7y0PuG7zzs) lub [kopia na innym serwerze](https://copy.com/HQPazfqLcbKKtYGd)
+    - [Part 2/2](http://we.tl/KbsQURCZtl) lub [kopia na innym serwerze](https://copy.com/KwGnOMtu6pRwuTTC)
 - Rozpakuj pobrane pliki 7zip'em (w razie konieczności wybierz "otwórz plik za
   pomocą 7zip")
 - Uruchom VirtualBoxa
