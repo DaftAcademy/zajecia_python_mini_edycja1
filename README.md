@@ -1,5 +1,11 @@
 # Zajęcia z pythona na wydziale MINI PW
 
+## Materiały na drugie zajęcia:
+Materiały zostały rozesłane mailowo, ale jeśli ich nie otrzymaliście, możecie ściągnąć je [stąd](https://copy.com/o9407gRwMfJFHUyO).
+
+Dodatkowo potrzebny będzie pakiet Pillow w wersji 3.0.0. Aby go zainstalować, wystarczy wydać w konsoli komendę `sudo pip install Pillow==3.0.0`.
+
+
 ## Praca domowa z pierwszych zajęć:  
 Poprawić kod programu napisanego na zajęciach w ten sposób, aby:
 
