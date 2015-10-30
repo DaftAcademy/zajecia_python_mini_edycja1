@@ -1,10 +1,20 @@
 # Zajęcia z pythona na wydziale MINI PW
 
+## Struktura plików i katalogów
+Materiały, kod napisany na zajęciach jak i treść prac domowych oraz najciekawsze rozwiązania będą pojawiać się w odpowiednich pokatalogach. Zawsze będziemy się starać, żeby te rzeczy pojawiały się dzień po zajęciach lub dzień przed zajęciami (w przypadku najciekawszych rozwiązań).
+
+## Errata do dostępnego obrazu systemu:
+Żeby wszystko działało jak należy (w tym: żeby się zainstalował `Pillow`), należy wcześniej wydać polecenia:
+- `sudo apt-get install python-dev`
+- `sudo apt-get install libjpeg-dev`
+- `sudo apt-get install zlib1g-dev`
+
+Przepraszam za niedociągnięcie (Antek).
+
 ## Materiały na drugie zajęcia:
 Materiały zostały rozesłane mailowo, ale jeśli ich nie otrzymaliście, możecie ściągnąć je [stąd](https://copy.com/o9407gRwMfJFHUyO).
 
 Dodatkowo potrzebny będzie pakiet Pillow w wersji 3.0.0. Aby go zainstalować, wystarczy wydać w konsoli komendę `sudo pip install Pillow==3.0.0`.
-
 
 ## Praca domowa z pierwszych zajęć:  
 Poprawić kod programu napisanego na zajęciach w ten sposób, aby:
@@ -25,7 +35,7 @@ Prezentację możesz obejrzeć [tutaj](http://balor.pl/zajecia_python/prez/#/)
 Jeśli udało Ci się uruchomić w pełni środowisko pythonowe, wraz z `ipython`em i
 bibliotekami `requests`, `unicodecsv` i masz przyzwoity edytor tekstowy, możesz
 ominąć ten punkt. Jeśli jednak chciał(a)byś skorzystać z przygotowanego przez
-nas obrazu systemu, który już to wszystko ma skonfigurowane i działające:
+nas obrazu Ubuntu, który już to wszystko ma skonfigurowane i działające:
 
 - Zainstaluj VirtualBoxa w wersji 4.3.30
   [stąd](https://www.virtualbox.org/wiki/Download_Old_Builds_4_3)<br>
