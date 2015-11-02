@@ -1,7 +1,7 @@
 # Zajęcia z pythona na wydziale MINI PW
 
 ## Ankieta dotycząca zajęć
-Przygotowaliśmy anonimową [ankietę do zajęć](https://docs.google.com/a/daftcode.pl/forms/d/13qJGWxz4i0fEcJnwRee9mQAHR1rjrjsIPDA9G_leevg/viewform),
+Przygotowaliśmy anonimową [ankietę do zajęć](http://goo.gl/forms/rUZKbyc8XB),
 która pozwoli nam na jak najlepsze dopasowanie następnych spotkań do Waszych
 oczekiwań. Prosimy wypełnić ją jak najszybciej, żebyśmy mieli czas się
 przygotować do następnych zajęć :)
