@@ -34,5 +34,5 @@ końcowego. Zachęcamy do okomentowania co najmniej tych linijek kodu, które ni
 są zrozumiałe dla innego człowieka na pierwszy rzut oka :)
 
 ## Rozwiązania pracy domowej z drugich zajęć:
-Czekamy na nadsyłanie rozwiązań na event@daftcode.pl do 8 listopada (niedziela)
+Czekamy na nadsyłanie rozwiązań na event@daftcode.com do 8 listopada (niedziela)
 włącznie :) Najciekawsze rozwiązania omówimy na zajęciach!
