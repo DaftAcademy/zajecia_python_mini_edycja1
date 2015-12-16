@@ -1,0 +1,70 @@
+{% macro progress_bar(label, percentage, progress_text) -%}
+<tr>
+    <td>{{label}}</td>
+    <td>
+        <div style="
+            border: 1px #333 solid; 
+            height:20px;
+            width:300px;">
+
+            <div style="float:right;">
+                {{progress_text}}
+                
+            </div>
+
+            <div style="
+                height:20px;
+                width:{{percentage*3.0}}px;
+                background-color:#aaa;">
+                
+            </div>                            
+            <div style="clear:right;"></div>
+        </div>
+    </td>
+</tr>
+{%- endmacro %}
+
+<html>
+    <head>
+        <title>My poor HTOP</title>
+    </head>
+    <body>
+        <h1>iHTOP</h1>
+
+        <div style="float:left;">
+            <h2>Cpu Stats</h2>
+            <table>
+            {% for core_num, perc in cpu_data %}
+                {{ progress_bar(core_num, perc, '{}%'.format(perc)) }}
+            {% endfor %}
+            </table>
+        </div>
+        <div style="float:left;">
+            <h2>Memory Stats</h2>
+            <table>
+            {% for mem_name, mem in mem_data.items() %}
+                {{ progress_bar(
+                    mem_name, 
+                    mem['percent'],
+                    '{}/{}'.format(mem['avail'], mem['total'])
+                ) }}
+            {% endfor %}
+            </table>
+        </div>
+        <br style="clear:left">
+
+        <div id="processlist">
+            <h2>Process List</h2>
+            <table>
+            {% for row in process_list %}
+                <tr>
+                {% for cell in row %}
+                    <td>{{ cell }}</td>
+                {% endfor %}
+                </tr>
+            {% endfor %}
+            </table>
+        </div>
+
+    </body>
+</html>
