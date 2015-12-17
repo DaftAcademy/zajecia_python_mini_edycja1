@@ -1,5 +1,7 @@
 # Zajęcia z pythona na wydziale MINI PW
 
+# UWAGA, zajęcia 6 odbędą się 14 stycznia 2016!
+
 ## Ankieta dotycząca zajęć
 Przygotowaliśmy anonimową [ankietę do zajęć](http://goo.gl/forms/rUZKbyc8XB),
 która pozwoli nam na jak najlepsze dopasowanie następnych spotkań do Waszych
