@@ -2,11 +2,6 @@
 
 ## Praca domowa z szóstych zajęć:
 
-1. powiadomienie o utworzeniu obiektu (z ID tego obiektu)
-2. KASOWANIE KOMENTÓW
-2a. niech kasowanie bedzie AJAXEM
-
-
 - Dodać w aplikacji powiadomienia typu flash (nie mylić z Adobe Flash :) ) o utworzeniu nowego komentarza
   za pomocą [wbudowanych narzędzi](http://flask.pocoo.org/docs/0.10/patterns/flashing/) z Flaska lub
   własnym rozwiązaniem.
