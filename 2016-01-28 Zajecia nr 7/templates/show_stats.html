@@ -1,0 +1,72 @@
+{% extends "_base.html" %}
+
+{% macro progress_bar(label, percentage, progress_text) -%}
+<tr>
+    <td>{{label}}</td>
+    <td>
+        <div class="progressbar_rapper">
+
+            <div class="fl">
+                {{progress_text}}
+            </div>
+
+            <div class="progressbar_core" style="width:{{percentage*3.0}}px;"></div>
+            <br class="clr">
+        </div>
+    </td>
+</tr>
+{%- endmacro %}
+
+{% block content %}
+<a href="{{ url_for('add_comment') }}">Add comment</a>
+<div class="fl infobox">
+    <h2>Cpu Stats</h2>
+    <table>
+    {% for core_num, perc in cpu_data %}
+        {{ progress_bar(core_num, perc, '{}%'.format(perc)) }}
+    {% endfor %}
+    </table>
+</div>
+<div class="fl infobox">
+    <h2>Memory Stats</h2>
+    <table>
+    {% for mem_name, mem in mem_data.items() %}
+        {{ progress_bar(
+            mem_name, 
+            mem['percent'],
+            '{}/{}'.format(mem['avail'], mem['total'])
+        ) }}
+    {% endfor %}
+    </table>
+</div>
+<br class="clr">
+
+<ul>
+    <h2>Cpu History</h2>
+    {% for cs in cpu_history %}
+        <li><i>{{cs.created}}:</i> <strong>{{cs.avg_load}}</strong></li>
+    {% endfor %}
+</ul>
+
+<ul>
+{% for commentage in comments %}
+    <li>{{ commentage.id }} - {{ commentage.created }} by <i>{{ commentage.nickname }}</i><br>
+        <b>{{ commentage.comment }}</b></li>
+{% endfor %}
+</ul>
+
+
+<div id="processlist">
+    <h2>Process List</h2>
+    <a href="{{ url_for('download_csv') }}">Download as CSV</a>
+    <table>
+    {% for row in process_list %}
+        <tr>
+        {% for cell in row %}
+            <td>{{ cell }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+</div>
+{% endblock %}

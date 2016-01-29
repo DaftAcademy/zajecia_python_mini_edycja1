@@ -1,0 +1,19 @@
+{% extends "_base.html" %}
+
+
+{% block content %}
+
+<h2>Add Comment Form</h2>
+
+<form action="{{ url_for('add_comment') }}" method="post">
+
+    <input type="text" placeholder="nickname" name="nickname" maxlength="30">
+    <br>
+    <textarea name="commentage" cols="30" rows="5">
+    </textarea>
+    <br>
+    <input type="submit" value="Add comment">
+
+</form>
+
+{% endblock %}

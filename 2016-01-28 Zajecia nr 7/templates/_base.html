@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>My poor HTOP</title>
+        <style type="text/css">
+            body {
+                font-family: helvetica;
+                color: #444;
+                padding: 30px;
+            }
+
+            .infobox {
+                margin-right: 30px;
+            }
+
+            .progressbar_rapper {
+                border: 1px #333 solid; 
+                height:20px;
+                width:300px;
+            }
+            .progressbar_core {
+                height:20px;
+                background-color:#aaa;
+            }
+
+            .fl {
+                float: left;
+            }
+
+            .fr {
+                float: right;
+            }
+            .clr {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>iHTOP</h1>
+        {% block content %}{% endblock %}
+    </body>
+</html>
